@@ -17,43 +17,43 @@ interface Milestone {
 const milestones: Milestone[] = [
   {
     icon: <Coffee className="w-5 h-5" />,
-    date: "January 15, 2023",
-    title: "The Day We Met",
+    date: "July, 2024",
+    title: "The First Time We (Actually) Go Close",
     description:
-      "Two strangers in the same place at the same time. Little did we know, this chance encounter would change everything. From the very first hello, something just felt right.",
-    image: "/images/milestone-meet.jpg",
+      "After a turbulent but interesting summer, we finally felt closer to each other than ever before and it was then when I decided to never let you go.",
+    image: "/images/1.jpg",
   },
   {
     icon: <Heart className="w-5 h-5" />,
-    date: "February 14, 2023",
-    title: "Our First Date",
+    date: "October, 2024",
+    title: "The best date/day ever",
     description:
-      "Nervous butterflies, endless conversations, and the moment we both knew this was something special. Time stood still and the world faded away.",
-    image: "/images/milestone-date.jpg",
+      "I felt closest to you in every possible way. I realized how lucky I am to have you and I wanted the day to not end :).",
+    image: "/images/2.jpg",
   },
   {
     icon: <Plane className="w-5 h-5" />,
-    date: "June 20, 2023",
-    title: "The First Trip Together",
+    date: "June, 2025",
+    title: "Our First Trip Together",
     description:
-      "New places, new memories, and the realization that every adventure is better with you by my side. We discovered the world together, one step at a time.",
-    image: "/images/milestone-trip.jpg",
+      "New places, new memories, and the realization that travelling is just so much more fun with you. I cannot wait on going on a trip and booking our next hotel room together ;)",
+    image: "/images/3.jpg",
   },
   {
     icon: <Laugh className="w-5 h-5" />,
-    date: "September 5, 2023",
-    title: "That Inside Joke Moment",
+    date: "December, 2025",
+    title: "Bittersweet Goodbyes",
     description:
-      "You know the one. The thing that still makes us both burst out laughing no matter where we are. Nobody else gets it, and that makes it even more ours.",
-    image: "/images/milestone-laugh.jpg",
+      "This winter trip was one of the best that I have ever had with you. I was so happy to see after being apart for the longest we have ever had and saying bye had never been harder.",
+    image: "/images/4.jpg",
   },
   {
     icon: <Sparkles className="w-5 h-5" />,
-    date: "And every day since...",
-    title: "And Many More...",
+    date: "2026 - Inifinity",
+    title: "Happily Ever After",
     description:
-      "Every single day with you adds another beautiful chapter to our story. The best moments are the quiet ones, the silly ones, and everything in between.",
-    image: "/images/milestone-more.jpg",
+      "The start of the year has been rocky but I really hope that this way we got done with all the fighting/negativity of the year. I am really sorry for hurting you and not treating how you deserve at times. I am really happy that you are pushing yourself and never forget how proud I am of you everyday. To forever and ever (heart emoji hehe)",
+    image: "/images/5.jpg",
   },
 ]
 
@@ -108,8 +108,8 @@ function TimelineCard({
             : `opacity-0 translate-y-8 ${isLeft ? "md:-translate-x-8" : "md:translate-x-8"}`
         } ${isLeft ? "md:text-right md:pr-0" : "md:text-left md:pl-0"}`}
       >
-        <div className="bg-card rounded-lg overflow-hidden shadow-md border border-border">
-          <div className="relative h-48 md:h-56 overflow-hidden">
+        <div className="bg-card rounded-lg overflow-hidden shadow-md border border-border flex flex-col h-[420px] md:h-[500px]">
+          <div className="relative flex-[4] min-h-0 overflow-hidden">
             <Image
               src={milestone.image || "/placeholder.svg"}
               alt={milestone.title}
@@ -118,24 +118,22 @@ function TimelineCard({
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          <div className="p-5 md:p-6">
-            <div
-              className={`flex items-center gap-2 mb-2 md:hidden`}
-            >
-              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-primary-foreground">
+          <div className="flex-1 p-4 md:p-5 flex flex-col justify-center">
+            <div className="flex items-center gap-2 mb-1 md:hidden">
+              <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-primary-foreground">
                 {milestone.icon}
               </div>
-              <span className="text-sm font-sans text-muted-foreground">
+              <span className="text-xs font-sans text-muted-foreground">
                 {milestone.date}
               </span>
             </div>
-            <span className="hidden md:block text-sm font-sans text-muted-foreground mb-1">
+            <span className="hidden md:block text-xs font-sans text-muted-foreground mb-0.5">
               {milestone.date}
             </span>
-            <h3 className="text-xl md:text-2xl font-serif font-bold text-foreground mb-2">
+            <h3 className="text-lg md:text-xl font-serif font-bold text-foreground mb-1 text-balance">
               {milestone.title}
             </h3>
-            <p className="text-sm md:text-base font-sans text-muted-foreground leading-relaxed">
+            <p className="text-xs font-sans text-muted-foreground leading-relaxed line-clamp-5">
               {milestone.description}
             </p>
           </div>

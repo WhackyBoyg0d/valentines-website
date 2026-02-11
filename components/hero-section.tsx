@@ -16,7 +16,7 @@ export function HeroSection() {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-foreground mb-6 animate-fade-in-up"
           style={{ animationDelay: "0.2s" }}
         >
-          {"Hey You "}
+          {"Hey Meher (aka Steam Momo) "}
           <span className="inline-block animate-pulse-heart text-primary">
             <Heart className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 fill-current inline-block" />
           </span>
@@ -26,7 +26,7 @@ export function HeroSection() {
           className="text-lg md:text-2xl font-sans text-muted-foreground max-w-md mx-auto animate-fade-in-up"
           style={{ animationDelay: "0.4s" }}
         >
-          Scroll down to take a walk through our story together
+          Scroll down to take a walk through our time together till now
         </p>
       </div>
 

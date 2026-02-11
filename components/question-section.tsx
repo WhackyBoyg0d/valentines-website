@@ -123,11 +123,11 @@ export function QuestionSection() {
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20">
       <div className="text-center mb-12 animate-fade-in-up">
         <p className="text-lg font-sans text-muted-foreground mb-4">
-          And now, the moment of truth...
+          And now, the moment of truth (I know we cannot do anyth on the day but fuck 14th feb)
         </p>
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-foreground text-balance">
           {"So... Will you be "}
-          <span className="text-primary">my Valentine</span>
+          <span className="text-primary">my Valentine everdyay</span>
           {"?"}
         </h2>
       </div>
